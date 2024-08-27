@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de texto</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <img class="logo" src="assets/Logo.png" alt="Logo de alura">
+    </header>
+    <main>
+        <section class="ingresar-mensaje">
+            <div class="contenedor-mensaje">
+                <textarea class="mensaje" placeholder="Ingrese el texto aquí"></textarea>
+            </div>    
+            <div class="informacion">
+                <img src="assets/alert.png" alt="icono de alerta">
+                <span>Solo letras minúsculas y sin acentos</span>
+            </div>
+            <div class="contenedor-botones">
+                <button class="boton-encriptar" onclick="botonEncriptar();">Encriptar</button>
+                <button class="boton-desencriptar" onclick="botonDesencriptar();">Desencriptar</button>
+            </div>
+        </section>
+        <section class="mostrar-resultado">
+            <div class="contenedor-muñeco">
+                <img src="assets/Muñeco.png" alt="Imagen de un muñeco">
+            </div>
+            <div class="contenedor-texto">
+                <span class="texto1">Ningún mensaje fue encontrado</span>
+                <span class="texto2">Ingresa el texto que desees encriptar o desencriptar.</span>
+            </div>
+            <div class="contenedor-resultado">
+                <textarea class="resultado" readonly></textarea>
+            </div>
+            <div class="contenedor-copiar">
+                <button class="boton-copiar" onclick="botonCopiar();">Copiar</button>
+            </div>
+        </section>
+        <div class="notificacion-alerta">Por favor, ingrese solo letras minúsculas y sin acentos</div>
+        <div class="notificacion-copiar">Texto copiado al portapapeles</div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
